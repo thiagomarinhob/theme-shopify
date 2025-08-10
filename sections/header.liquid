@@ -3,11 +3,11 @@
     {{ shop.name | link_to: routes.root_url }}
   </h2>
 
-  {% comment %} <div class="header__menu">
+  <div class="">
     {% for link in section.settings.menu.links %}
       {{ link.title | link_to: link.url }}
     {% endfor %}
-  </div> {% endcomment %}
+  </div>
 
   {% comment %} <div class="header__icons">
     {% if shop.customer_accounts_enabled %}
@@ -30,7 +30,7 @@
   "settings": [
     {
       "type": "link_list",
-      "id": "menu",
+      "id": "main-menu",
       "label": "t:labels.menu"
     }
   ]
