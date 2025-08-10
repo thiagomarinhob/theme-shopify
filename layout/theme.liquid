@@ -2,7 +2,7 @@
 <html lang="{{ request.locale.iso_code }}">
   <head>
     {% # Load and preload the critical CSS %}
-    {{ 'tailwind.output.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'tailwind.output.css' | asset_url | stylesheet_tag }}
 
 
     {% # Social, title, etc. %}
